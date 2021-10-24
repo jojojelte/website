@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: transparent;
+  text-shadow: #c53838 2px 2px, #2f6fbd -2px -2px;
+
+  background-color: rgb(173, 216, 230, 0.2);
+  color: rgb(15, 15, 15);
+}
+p::selection {
+  background-color: rgb(173, 216, 230, 0.2);
+  color: white;
+  text-shadow: #c53838 1px 1px, #2f6fbd -1px -1px;
+}
+
+#hero {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: whitesmoke;
+  margin-top: 10vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#hero p {
+  text-align: center;
+  font-size: 2vh;
+  font-weight: 500;
+}
+#hero h1 {
+  text-align: center;
+  font-size: 4vh;
+  font-weight: 900;
+}
+
+#social-links {
+  color: white;
+  text-align: center;
+  font-size: 4vh;
+  margin-top: 2vh;
+}
+
+#linked {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+#github {
+  transition-duration: 0.3s;
+  color: white;
+}
+#github:hover {
+  color: rgb(142, 68, 185);
+  animation: shake 0.5s ease;
+  transition-duration: 0.2s;
+}
+#linked {
+  color: white;
+  transition-duration: 0.3s;
+}
+#linked:hover {
+  color: #2f6fbd;
+  animation: shake 0.5s ease;
+  transition-duration: 0.2s;
+}
+#mail {
+  color: white;
+  transition-duration: 0.3s;
+}
+#mail:hover {
+  color: rgb(65, 119, 150);
+  transition-duration: 0.2s;
+  animation: shake 0.5s ease;
+}
+
+#arrowdown {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transform-origin: center;
+  display: block;
+}
+#arrowup {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transform-origin: center;
+  display: none;
+  margin-top: 10vh;
+}
+
+#expanded {
+  position: absolute;
+  margin-top: -15vh;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+#list {
+  margin-top: 2vh;
+  list-style: none;
+  text-align: center;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+#list a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+/* AMIMATIONM */
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* MENU */
+@keyframes fade-in-top {
+  from {
+    margin-top: -18vw;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@keyframes fade-out-top {
+  from {
+    margin-top: 0vw;
+  }
+  to {
+    margin-top: -18vh;
+  }
+}
+/* ARROW UP */
+@keyframes fade-in-top-button {
+  from {
+    margin-top: -5vh;
+  }
+  to {
+    margin-top: 10vh;
+  }
+}
+@keyframes fade-out-top-button {
+  from {
+    margin-top: 10vh;
+  }
+  to {
+    margin-top: -3vh;
+  }
+}
+/* ARROW DOWN */
+@keyframes fade-to-top {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -4vh;
+  }
+}
+@keyframes fade-to-bottom {
+  from {
+    margin-top: -4vh;
+  }
+  to {
+    margin-top: 0;
+  }
+}
